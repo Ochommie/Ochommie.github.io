@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_toggle.css">
+    <title>Portafolio Omar Catzin | IDGD</title>
+</head>
+<body>
+    <header class="Titulo">
+        <h1>Omar Alejandro Catzin Alonso</h1> 
+        <nav class="nav">
+            <ul>
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#sobre-mi">About Me</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button onclick="cambiarTema()">🌙 Cambiar Tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Ingeniero en Diseño Gráfico Digital</h2>
+            <img src="Perfil.jpg">
+            <p>Diseñador de vez en cuando, Nerd a todo momento</p>
+        </section>
+
+        <section id="sobre-mi">
+            <h2>Gustos, metas, y un poco de todo</h2>
+            <ul>
+                <li>Nerd/Geek 24/7</li>
+                <li>Cinta Roja 3 en Taekwondo</li>
+                <li>Ex-Gimnasta de Pre-Selección</li>
+                <li>Amante de la comida</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+
+            <div class="grid-galeria">
+                <div class="galeria-item">
+                    <img src="Arco.jpg" alt="Proyecto 1">
+                </div>
+
+                <div class="galeria-item">
+                    <img src="Dibujo.JPG" alt="Proyecto 2">
+                </div>
+
+                <div class="galeria-item">
+                    <img src="Spiderman.jpg" alt="Proyecto 3">
+                </div>
+
+                <div class="galeria-item">
+                    <img src="Taek.jpg" alt="Proyecto 4">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Tel: 646 171 6486</p>
+            <p>Instagram: <a href="https://instagram.com/ochommie_16">@ochommie_16</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Omar Catzin</p>
+    </footer>
+
+    <script>
+        function cambiarTema(){
+            document.body.classList.toggle("modo-oscuro");
+        }
+    </script>
+</body>
+</html>
